@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                height: 100%;
+            }
+            .balloon {
+                position: absolute;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <img class="balloon" src="../img/balloon.png">
+
+        <script>
+            const balloon = document.querySelector('.balloon');
+            let yCord = 0;
+            let rafId;
+
+            (function render() {
+                balloon.style.transform = `translateY(${-yCord}px)`; // ES6
+                yCord += 10;
+                rafId = requestAnimationFrame(render); // HTML5
+                if (yCord > 500) cancelAnimationFrame(rafId);
+            })();
+        </script>
+    </body>
+</html>

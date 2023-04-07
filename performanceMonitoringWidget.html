@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <!--
+            - Description
+            APP의 성능, FPS(Frames Per Second)를 보여주는 위젯(cf. 주사율)
+            구체적으로, requestAnimationFrame의 콜백이 1초간 호출되는 횟수 추적
+
+            - Detail
+            보통 브라우저는 60FPS를 지원(한 프레임당 16ms)
+            requestAnimationFrame의 콜백 안에 16ms 이상의 로직이 있다면,
+            프레임 유실되므로 최대한 가볍게 쪼개서 작성하는 것을 추천
+
+            - Configuration
+            A. CORS ERROR
+                1. npm install http-server -g
+                2. npx http-server
+        -->
+        <script type="module">
+            import { init } from './javascript/performanceMonitoringWidget.mjs';
+            init();
+        </script>
+    </body>
+</html>
