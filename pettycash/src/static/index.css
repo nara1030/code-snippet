@@ -1,0 +1,31 @@
+.profile {
+  position: relative;
+  width: 120px;
+  height: 130px;
+}
+
+.photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.role {
+  position: absolute;
+  left: 65%;
+  font-family: "naver_nanum";
+}
+
+.child, .mother {
+  position: relative;
+  width: 120px;
+  height: 150px;
+}
+
+.pocket, .total {
+  position: absolute;
+  left: 65%;
+  bottom: 75%;
+  font-family: "naver_nanum";
+}

@@ -4,6 +4,7 @@
 1. 자바스크립트
     * [requestAnimationFrame](#requestAnimationFrame)
 2. 리액트
+    * [props로 이벤트 전달](#props로-이벤트-전달)
 3. CSS
 
 ### requestAnimationFrame
@@ -16,10 +17,31 @@ window.requestAnimationFrame(callback);
 ```
 
 * 예제
-    * JS] [날아가는 풍선](javascript/requestAnimationFrame.html)
-    * JS] [사용자 정의 성능 위젯](performanceMonitoringWidget.html)
+    * JS] [날아가는 풍선](animation/ex1/requestAnimationFrame.html)
+    * JS] [사용자 정의 성능 위젯](animation/fps/performanceMonitoringWidget.html)
 * 문서
     * HTML5] [Web Animation API](https://sculove.github.io/slides/webAnimation/#/)
     * JS] [모듈 소개](https://ko.javascript.info/modules-intro)
+
+##### [목차로 이동](#목차)
+
+### props로 이벤트 전달
+```txt
+※ 리액트가 처음이라 미흡하나, 다음을 연습해보기 위해 작성해보았다.
+- Description
+  = 엄마는 한도 내에서 아들, 딸에게 용돈을 줄 수 있다.
+  = 총 잔고 외에도 아들, 딸이 받은 용돈을 표시한다.
+- Implement
+  = 자식(아들, 딸)들이 용돈을 요청 시, 받은 용돈의 총 합계를 관리해야 하므로 
+    데이터는 엄마(부모 컴포넌트)가 관리한다.
+  = 이를 위해 props로 이벤트를 넘겨주어 부모의 잔고를 변경해준다.
+  = 요청 후 잔고에 따라 용돈을 주는 행위는 부모에게 책임이 있으므로,
+    해당 로직을 부모가 가지도록 하였다.
+  = 단, 요청 대상을 설정해주는 setTarget과 용돈 증가 로직인 setPocket이
+    자식에 위치하는데 맞나 싶다..
+```
+
+* 예제
+  * [자식들에게 용돈 주기](pettycash/src/index.js)
 
 ##### [목차로 이동](#목차)
