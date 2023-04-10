@@ -43,7 +43,11 @@ window.requestAnimationFrame(callback);
     엄마가 직접 해당 필드(target)를 갖고 있지 않도록 변경했다.
 ```
 
+![screenshot](./pettycash/public/img/description.png)
+
 * 예제
   * [자식들에게 용돈 주기](pettycash/src/index.js)
+* 문서
+  * [틱택토 튜토리얼](https://react.dev/learn/tutorial-tic-tac-toe#lifting-state-up)
 
 ##### [목차로 이동](#목차)
