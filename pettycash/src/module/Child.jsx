@@ -7,8 +7,7 @@ export default function Child(props) {
 
     const handleClick = () => {
         console.log(`${props.role}: 엄마, 용돈 좀 주세요!`);
-        props.setTarget(props.role);
-        if (props.givePettyCash()) setPocket(money + 1000);
+        if (props.givePettyCash(props.role)) setPocket(money + 1000);
     }
 
     return (

@@ -5,18 +5,13 @@ const { useState } = require("react");
 
 export default function Mother(props) {
     const [total, setBalance] = useState(20000);
-    const [target, setTarget] = useState('');
-
-    const who = (target) => {
-        setTarget(target);
-    }
-
-    const give = () => {
+    
+    const give = (role) => {
         if (total === 0) {
-            console.log(`저번에 줬잖아~ ${target}`);
+            console.log(`저번에 줬잖아~ ${role}`);
             return false;
         }
-        console.log(`알았어 ${target}`);
+        console.log(`알았어 ${role}`);
         setBalance(total - 1000);
         return true;
     }
@@ -29,13 +24,11 @@ export default function Mother(props) {
             <Child
                 url="../../img/son.png"
                 role="아들"
-                setTarget={who}
                 givePettyCash={give}
             />
             <Child
                 url="../../img/daughter.png"
                 role="딸"
-                setTarget={who}
                 givePettyCash={give}
             />
         </div>
