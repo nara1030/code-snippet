@@ -43,7 +43,7 @@ window.requestAnimationFrame(callback);
     엄마가 직접 해당 필드(target)를 갖고 있지 않도록 변경했다.
 ```
 
-![screenshot](./pettycash/public/img/description.png)
+<img src="./pettycash/public/img/description.png" width="200" height="100">
 
 * 예제
   * [자식들에게 용돈 주기](pettycash/src/index.js)
