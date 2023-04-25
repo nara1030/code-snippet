@@ -76,6 +76,7 @@ function createHtmlInTreeFormat(treeMenus) {
         li = document.createElement("li");
         text = document.createTextNode(menu.value.name);
         li.appendChild(text);
+        li.setAttribute('key', menu.value.id);
 
         if (menu.children) li.appendChild(createHtmlInTreeFormat(menu.children));
 
