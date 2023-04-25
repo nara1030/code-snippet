@@ -1,0 +1,65 @@
+[
+    {
+        "id": "menu_1",
+        "name": "A",
+        "depth": "1",
+        "parent": null,
+        "order": "1"
+    },
+    {
+        "id": "menu_2",
+        "name": "A-1",
+        "depth": "2",
+        "parent": "menu_1",
+        "order": "1"
+    },
+    {
+        "id": "menu_3",
+        "name": "A-2",
+        "depth": "2",
+        "parent": "menu_1",
+        "order": "2"
+    },
+    {
+        "id": "menu_4",
+        "name": "A-2-1",
+        "depth": "3",
+        "parent": "menu_3",
+        "order": "1"
+    },
+    {
+        "id": "menu_5",
+        "name": "A-2-2",
+        "depth": "3",
+        "parent": "menu_3",
+        "order": "2"
+    },
+    {
+        "id": "menu_6",
+        "name": "A-2-3",
+        "depth": "3",
+        "parent": "menu_3",
+        "order": "3"
+    },
+    {
+        "id": "menu_7",
+        "name": "B",
+        "depth": "1",
+        "parent": null,
+        "order": "2"
+    },
+    {
+        "id": "menu_8",
+        "name": "B-1",
+        "depth": "2",
+        "parent": "menu_7",
+        "order": "1"
+    },
+    {
+        "id": "menu_9",
+        "name": "B-2",
+        "depth": "2",
+        "parent": "menu_7",
+        "order": "2"
+    }
+]
