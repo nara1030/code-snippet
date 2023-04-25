@@ -5,6 +5,7 @@
     * [requestAnimationFrame](#requestAnimationFrame)
 2. 리액트
     * [props로 이벤트 전달](#props로-이벤트-전달)
+    * [비동기 데이터 렌더링](#비동기-데이터-렌더링)
 3. CSS
 
 ### requestAnimationFrame
@@ -49,5 +50,22 @@ window.requestAnimationFrame(callback);
   * [자식들에게 용돈 주기](pettycash/src/index.js)
 * 문서
   * [틱택토 튜토리얼](https://react.dev/learn/tutorial-tic-tac-toe#lifting-state-up)
+
+##### [목차로 이동](#목차)
+
+### 비동기 데이터 렌더링
+```txt
+※ 메뉴 예제를 연습해보고 있다.
+※ 해당 예제를 연습하며 비동기 함수(getMenus)를 통해 데이터를 받아와
+   useEffect를 통해 렌더링해주었다.
+```
+
+* 예제
+  * [GNB 생성](my-layout)
+* 문서
+  * [useEffect_벨로퍼트](https://react.vlpt.us/basic/16-useEffect.html)
+  * [useEffect 완벽가이드](https://www.rinae.dev/posts/a-complete-guide-to-useeffect-ko)
+  * [프라미스와 async, await](https://ko.javascript.info/async)
+  * 
 
 ##### [목차로 이동](#목차)
