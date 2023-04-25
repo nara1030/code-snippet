@@ -1,16 +1,18 @@
 import { useEffect, useState } from "react";
 import { getMenus } from "../../service/getMenus";
 
-export const Gnb = () => {
+export const Gnb = ({user}) => {
+    const {id, name, role} = {...user};
     const [menus, setMenus] = useState([]);
     useEffect(() => {
         // getMenus(1).then(setMenus);
-        getMenus().then(setMenus);
+        getMenus(role).then(setMenus);
     }, []);
 
     return (
         <header>
             <h1></h1>
+            <h3>{name}님, 안녕하세요!</h3>
             <h2 className="hide">메인 메뉴</h2>
             <nav className="gnb">
                 {/* {createGnb_(menus).outerHTML} */}
